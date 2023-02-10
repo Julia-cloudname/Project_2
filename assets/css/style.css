@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+}
+
+.timeTracker {
+    background-color: pink;
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.timeArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blockTime {
+    
+    width: 150px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.time {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-size: 60px;
+}
+
+.buttons {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.button {
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+    width: 180px;
+    transition: .2s ease-in-out;
+}
+
+.start {
+    background-color: green;
+
+}
+
+.stop {
+    background-color: red;
+}
