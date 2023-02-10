@@ -54,4 +54,10 @@ milliseconds++;
     displayTime()
 }, 10);
 }
+const startButton = document.querySelector('.start');
+startButton.addEventListener('click', startTimer);
 
+const stopButton = document.querySelector('.stop');
+stopButton.addEventListener('click', () => {
+clearInterval(interval);
+});
