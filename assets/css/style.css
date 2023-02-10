@@ -1,7 +1,9 @@
+/* Styling heading */
 h1 {
     text-align: center;
 }
 
+/* Styling time area */
 .timeTracker {
     background-color: pink;
     width: 60%;
@@ -31,6 +33,7 @@ h1 {
     font-size: 60px;
 }
 
+/* Style of buttons */
 .buttons {
     display: flex;
     justify-content:space-between;
