@@ -6,11 +6,13 @@ h1 {
 /* Styling time area */
 .timeTracker {
     background-color: #c0c0c0;
+   
+    border-radius: 4px;
     width: 60%;
     height: 50%;
     margin: 0 auto;
     margin-top: 112px;
-    left: 250px;
+    left: 275px;
     position: absolute;
 }
 
@@ -47,6 +49,7 @@ h1 {
     margin: 0 auto;
     position: relative;
     margin-top: 94px;
+    bottom: 10px;
 }
 
 .button {
@@ -67,4 +70,27 @@ h1 {
 
 .stop {
     background-color: red;
+}
+
+#startNewtask {
+    background-color: green;
+    border-radius: 100px;
+}
+
+/* Task area */
+
+.taskArea {
+    box-shadow: 0px 0px 5px #666;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    min-height: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.taskContent {
+    
 }
