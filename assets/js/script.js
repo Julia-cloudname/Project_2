@@ -30,7 +30,7 @@ function displayTime() {
     millisecondDiv.innerText = checkTime(milliseconds);
   }
  /**
-  * The function starts a timer that increments milliseconds every 10 Msec.
+  * The function starts a timer that increments milliseconds.
   *  When the Msec reach 100, the seconds are incremented and the Msec 
   * are reset to 0. Similar checks are made for minutes and hours.
   */ 
@@ -61,3 +61,5 @@ const stopButton = document.querySelector('.stop');
 stopButton.addEventListener('click', () => {
 clearInterval(interval);
 });
+
+
