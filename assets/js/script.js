@@ -84,6 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+  /**
+   * Function stops a timer, resetting the timer to its starting value. Function does not take any arguments. 
+   */
   function stopTimer() {
     clearInterval(timerId);
 
