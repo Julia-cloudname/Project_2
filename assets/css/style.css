@@ -72,10 +72,19 @@ h1 {
     background-color: red;
 }
 
+.resume {
+    background-color: green;
+}
+
+.pause {
+    background-color: yellow;
+}
+
 #startNewtask {
     background-color: green;
     border-radius: 100px;
 }
+
 
 /* Task area */
 
