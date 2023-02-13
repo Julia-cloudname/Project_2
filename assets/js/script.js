@@ -74,31 +74,28 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 10);
   }
 
+  /**
+   * Function pauses a timer. Takes one argument @param {*} timerId which is the ID of the timer that is to be paused.
+   */
   function pauseTimer(timerId) {
     clearInterval(timerId);
     paused = true;
+    console.log("paused at:", hours, minutes, seconds);
 
   }
 
   function stopTimer() {
     clearInterval(timerId);
 
-    millisecondDiv.textContent = "00"
-    secondDiv.textContent = "00"
-    minuteDiv.textContent = "00"
-    hourDiv.textContent = "00"
+    paused = true;
 
     hours = 0;
     minutes = 0;
     seconds = 0;
     milliseconds = 0;
-
-    startPauseButton.innerHTML = "Start";
-    startPauseButton.style.backgroundColor = "green";
-
+    
+    return null;
   }
-
-
 
   //Listeners
 
@@ -116,7 +113,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
-  stopButton.addEventListener('click', stopTimer);
+  stopButton.addEventListener('click', (event) => {
+    stopTimer(timerId);
+
+    millisecondDiv.textContent = "00"
+    secondDiv.textContent = "00"
+    minuteDiv.textContent = "00"
+    hourDiv.textContent = "00"
+
+    startPauseButton.classList.remove("pause");
+    startPauseButton.classList.add("start");
+    startPauseButton.innerText = "Start";
+
+  });
 
 
 });
