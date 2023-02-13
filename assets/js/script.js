@@ -19,9 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const stopButton = document.querySelector('.stop');
   const newTaskButton = document.querySelector('.newTask');
 
-  //Hide buttons
-
-
+ 
 
   /**
    * This function takes a time as parameter and checks if it is less than 10.
@@ -82,31 +80,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
-  function stopTimer(timerId) {
+  function stopTimer() {
     clearInterval(timerId);
-    paused = true;
+
+    millisecondDiv.textContent = "00"
+    secondDiv.textContent = "00"
+    minuteDiv.textContent = "00"
+    hourDiv.textContent = "00"
 
     hours = 0;
     minutes = 0;
     seconds = 0;
     milliseconds = 0;
-    return null;
-  }
 
-  /**
-   * Create pauseButton, set Start Button in it and update content and style of Start Button
-   */
-  function updateStartButton() {
-
-    startPauseButton.class = 'pause';
-    startPauseButton.innerHTML = "<p2>Pause</p2>"
-    startPauseButton.style.backgroundColor = "yellow";
-  }
-
-  function updatePauseButton() {
-
-    startPauseButton.class = 'resume';
-    startPauseButton.innerHTML = "<p2>Resume</p2>"
+    startPauseButton.innerHTML = "Start";
     startPauseButton.style.backgroundColor = "green";
 
   }
@@ -129,16 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
-  stopButton.addEventListener('click', () => {
-
-
-    millisecondDiv.textContent = "00"
-    secondDiv.textContent = "00"
-    minuteDiv.textContent = "00"
-    hourDiv.textContent = "00"
-  });
-
-
+  stopButton.addEventListener('click', stopTimer);
 
 
 });
