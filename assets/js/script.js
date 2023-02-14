@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //Buttons
   const startPauseButton = document.querySelector('#start-pause');
   const stopButton = document.querySelector('.stop');
-  const newTaskButton = document.querySelector('.newTask');
+  const newRoundButton = document.querySelector('.newRoundButton');
 
  
 
@@ -100,6 +100,19 @@ document.addEventListener("DOMContentLoaded", () => {
     return null;
   }
 
+  function addRound() {
+    clearInterval(timerId);
+    console.log("paused at:", hours, minutes, seconds);
+
+    let roundTime = document.getElementsByClassName('roundConteiner');
+    let timeDiv = document.createElement('div');
+    timeDiv.innerText = `New round: ${hours}:${minutes}:${seconds}:${milliseconds}`
+    roundTime[0].append(timeDiv);
+
+    console.log(roundTime);
+
+  }
+
   //Listeners
 
   startPauseButton.addEventListener('click', (event) => {
@@ -129,6 +142,10 @@ document.addEventListener("DOMContentLoaded", () => {
     startPauseButton.innerText = "Start";
 
   });
+
+  newRoundButton.addEventListener ('click', (event) => {
+    addRound();
+  })
 
 
 });
