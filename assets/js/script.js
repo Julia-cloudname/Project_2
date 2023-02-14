@@ -99,17 +99,28 @@ document.addEventListener("DOMContentLoaded", () => {
     
     return null;
   }
+  
 
   function addRound() {
-    clearInterval(timerId);
+    
     console.log("paused at:", hours, minutes, seconds);
 
-    let roundTime = document.getElementsByClassName('roundConteiner');
-    let timeDiv = document.createElement('div');
-    timeDiv.innerText = `New round: ${hours}:${minutes}:${seconds}:${milliseconds}`
-    roundTime[0].append(timeDiv);
+    let timeTrecker = document.getElementsByClassName('timeTracker')[0];
+    let newRoundArea = document.createElement('div');
+    newRoundArea.classList.add('roundArea');
+    timeTrecker.append(newRoundArea);
+    let roundName = document.createElement('div');
+    newRoundArea.append(roundName);
+    roundName.classList.add('newRoundName');
+    roundName.innerText = 'Round'
+    let roundTime = document.createElement('div');
+    newRoundArea.append(roundTime);
+    roundTime.classList.add('newRoundTime');
+    roundTime.innerText = ` ${hours}:${minutes}:${seconds}:${milliseconds}`;
+    let timeTreckerArea = document.getElementsByClassName('timeTracker');
+    timeTreckerArea.style.width = 
 
-    console.log(roundTime);
+    console.log(timeTrecker);
 
   }
 
@@ -144,7 +155,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   newRoundButton.addEventListener ('click', (event) => {
+    clearInterval(timerId);
     addRound();
+
+    startPauseButton.classList.remove("pause");
+    startPauseButton.classList.add("start");
+    startPauseButton.innerText = "Start";
+
+    console.log(startPauseButton.value);
+
   })
 
 
