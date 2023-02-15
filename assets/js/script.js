@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const minuteDiv = document.querySelector('.minute');
   const secondDiv = document.querySelector('.second');
   const millisecondDiv = document.querySelector('.millisecond');
+  const timeTreckerDiv = document.getElementsByClassName('timeTracker')[0];
   
   const msInSecond = 1000;
   const msInMinute = msInSecond * 60;
@@ -13,7 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const startPauseButton = document.querySelector('#start-pause');
   const stopButton = document.querySelector('.stop');
   const newRoundButton = document.querySelector('.newRoundButton');
+  
 
+  /**
+   * The function takes a number @param {*} value as input and @returns a string 
+   * that represents the same number with two digits. 
+   */
   function format2Digits(value){
     if (value < 10) {
       return '0' + value.toString();
@@ -21,8 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
     return value;
   }
 
+  
+  /**
+   * The function takes a time duration @param {*} in milliseconds as input and displays 
+   * it in hours, minutes, seconds, and milliseconds in divs. 
+   */
   function displayTime(milliseconds) {
-    //new function
+   
     let tailMs = milliseconds;
     let hours =  Math.floor(milliseconds/msInHour);
     tailMs = tailMs - msInHour * hours;
@@ -32,8 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     let seconds = Math.floor(tailMs/msInSecond);
     tailMs = Math.floor((tailMs - msInSecond * seconds)/10);
-    //new function
-    
   
     hourDiv.innerText =  format2Digits(hours);
     minuteDiv.innerText = format2Digits(minutes);
@@ -41,34 +50,48 @@ document.addEventListener("DOMContentLoaded", () => {
     millisecondDiv.innerText = format2Digits(tailMs);
   }
 
+  function displayLap(milliseconds){
+
+    let tailMs = milliseconds;
+    let hours =  Math.floor(milliseconds/msInHour);
+    tailMs = tailMs - msInHour * hours;
+
+    let minutes = Math.floor(tailMs/msInMinute);
+    tailMs = tailMs - msInMinute * minutes;
+    
+    let seconds = Math.floor(tailMs/msInSecond);
+    tailMs = Math.floor((tailMs - msInSecond * seconds)/10);
+
+
+    let newRound = document.createElement('div');
+    newRound.classList.add('roundArea');
+    timeTreckerDiv.append(newRound);
+    let roundName = document.createElement('div');
+    newRound.append(roundName);
+    roundName.classList.add('newRoundName');
+    roundName.innerText = 'Round'
+    let roundTime = document.createElement('div');
+    newRound.append(roundTime);
+    roundTime.classList.add('newRoundTime');
+    roundTime.innerText = ` 
+    ${hours}:
+    ${minutes}:
+    ${seconds}:
+    ${tailMs}`;
+
+    console.log(hours, minutes, seconds, tailMs);
+    
+  }
+
   function consoleTime(milliseconds){
     console.log(milliseconds);
   }
 
-  function addRound() {
-    // console.log("paused at:", hours, minutes, seconds);
-
-    let timeTrecker = document.getElementsByClassName('timeTracker')[0];
-    let newRoundArea = document.createElement('div');
-    newRoundArea.classList.add('roundArea');
-    timeTrecker.append(newRoundArea);
-    let roundName = document.createElement('div');
-    newRoundArea.append(roundName);
-    roundName.classList.add('newRoundName');
-    roundName.innerText = 'Round'
-    let roundTime = document.createElement('div');
-    newRoundArea.append(roundTime);
-    roundTime.classList.add('newRoundTime');
-    roundTime.innerText = ` ${hours}:${minutes}:${seconds}:${milliseconds}`;
-    
-
-    // console.log(timeTrecker);
-
-  }
-
   setOnTick(displayTime);
-  //Listeners
 
+  
+
+  //Listeners
   startPauseButton.addEventListener('click', (event) => {
     let btn = event.target;
     
@@ -103,11 +126,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   newRoundButton.addEventListener ('click', (event) => {
     
-    addRound();
+    displayLap();
 
     startPauseButton.classList.remove("pause");
     startPauseButton.classList.add("start");
     startPauseButton.innerText = "Start";
+
+    console.log();
 
   })
 
