@@ -47,6 +47,7 @@ function isTimerStarted() {
  */
 function timerClear() {
     timerMilliseconds = 0;
+    timerSavedMilliseconds = 0;
 }
 
 /**
@@ -66,4 +67,6 @@ function timerLastLap() {
 function setOnTick(onTick) {
     timerOnTick = onTick;
 }
+
+
 

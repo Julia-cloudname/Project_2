@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const minuteDiv = document.querySelector('.minute');
   const secondDiv = document.querySelector('.second');
   const millisecondDiv = document.querySelector('.millisecond');
-  const timeTreckerDiv = document.getElementsByClassName('timeTracker')[0];
+  const roundsDiv = document.querySelector('#rounds');
   
   const msInSecond = 1000;
   const msInMinute = msInSecond * 60;
@@ -50,6 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
     millisecondDiv.innerText = format2Digits(tailMs);
   }
 
+  
+
   function displayLap(milliseconds){
 
     let tailMs = milliseconds;
@@ -65,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let newRound = document.createElement('div');
     newRound.classList.add('roundArea');
-    timeTreckerDiv.append(newRound);
+    roundsDiv.prepend(newRound);
     let roundName = document.createElement('div');
     newRound.append(roundName);
     roundName.classList.add('newRoundName');
@@ -82,14 +84,8 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(hours, minutes, seconds, tailMs);
     
   }
-
-  function consoleTime(milliseconds){
-    console.log(milliseconds);
-  }
-
+ 
   setOnTick(displayTime);
-
-  
 
   //Listeners
   startPauseButton.addEventListener('click', (event) => {
@@ -126,15 +122,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   newRoundButton.addEventListener ('click', (event) => {
     
-    displayLap();
+    if (!isTimerStarted()) {
+      return;
+    }
 
+    let lastLapMs = timerLastLap(); 
+    displayLap(lastLapMs);
     startPauseButton.classList.remove("pause");
     startPauseButton.classList.add("start");
     startPauseButton.innerText = "Start";
-
-    console.log();
-
-  })
-
-
+  } );
 });
