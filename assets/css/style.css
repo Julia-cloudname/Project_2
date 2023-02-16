@@ -4,7 +4,8 @@ h1 {
     margin-top: 75px;
 }
 body {
-    background: url("/assets/images/background.png") no-repeat center center;
+    background: url("../assets/images/background.webp") no-repeat center center;
+    font-family: Zaychik;
 }
 /* Styling time area */
 .timeTracker {
@@ -64,16 +65,16 @@ body {
     margin-right: 30px;
     margin-left: 30px;
     transition: .2s ease-in-out;
-    box-shadow: 0px 0px 5px #666;
+    box-shadow: 5px 4px 6px #666;
 }
 
 .start {
-    background-color:  rgb(0, 95, 102);
+    background-color: rgb(53 158 166);
 
 }
 
 .stop {
-    background-color:  rgba(240, 102, 114, 0.9);
+    background-color:  rgb(239 162 169 / 90%);
 }
 
 .resume {
@@ -81,7 +82,7 @@ body {
 }
 
 .pause {
-    background-color: yellow;
+    background-color: rgb(226 183 165 / 90%);
 }
 
 #startNewtask {
