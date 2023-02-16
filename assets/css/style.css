@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Domine&family=Playfair+Display+SC&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
 
 /* Styling heading */
 h1 {
@@ -7,7 +16,7 @@ h1 {
     font-size: 48px;
 }
 body {
-    background: url("../images/background.webp") no-repeat center center;
+    background: url("/assets/images/background.webp") no-repeat center center;
     font-family: Zaychik;
 }
 /* Styling time area */
@@ -126,4 +135,21 @@ body {
 
 .newRoundTime {
     width: 100px;
+}
+
+/* footer */
+
+footer {
+    height: 200px;
+     
+}
+
+footer p {
+    text-align: center;
+    color: black;
+    
+} 
+
+#footer-autor {
+    padding-top: 10px;
 }
