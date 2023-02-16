@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /**Area displays time and buttons*/
+  /**Area displays time*/
   const hourDiv = document.querySelector('.hour');
   const minuteDiv = document.querySelector('.minute');
   const secondDiv = document.querySelector('.second');
@@ -50,8 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
     millisecondDiv.innerText = format2Digits(tailMs);
   }
 
-  
-
+  /**
+   * This function takes in @param {*} number of milliseconds and displays it in hours, minutes, seconds, 
+   * and milliseconds format. It then creates a new round area with a round name and the formatted time, 
+   * and prepends it to a div called roundsDiv.
+   */
   function displayLap(milliseconds){
 
     let tailMs = milliseconds;
@@ -64,7 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let seconds = Math.floor(tailMs/msInSecond);
     tailMs = Math.floor((tailMs - msInSecond * seconds)/10);
 
-
     let newRound = document.createElement('div');
     newRound.classList.add('roundArea');
     roundsDiv.prepend(newRound);
@@ -75,11 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let roundTime = document.createElement('div');
     newRound.append(roundTime);
     roundTime.classList.add('newRoundTime');
-    roundTime.innerText = ` 
-    ${hours}:
-    ${minutes}:
-    ${seconds}:
-    ${tailMs}`;
+    roundTime.innerText = `${hours} : ${minutes} : ${seconds} : ${tailMs}`;
 
     console.log(hours, minutes, seconds, tailMs);
     
