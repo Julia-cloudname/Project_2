@@ -7,7 +7,7 @@ h1 {
     font-size: 48px;
 }
 body {
-    background: url("/assets/images/background.webp") no-repeat center center;
+    background: url("../images/background.webp") no-repeat center center;
     font-family: Zaychik;
 }
 /* Styling time area */
