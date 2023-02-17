@@ -7,14 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const roundsDiv = document.querySelector('#rounds');
   let roundClickCounter = 0;
 
-
   const msInSecond = 1000;
   const msInMinute = msInSecond * 60;
   const msInHour = msInMinute * 60;
 
   //Buttons
   const startPauseButton = document.querySelector('#start-pause');
-  const stopButton = document.querySelector('.stop');
+  const resetButton = document.querySelector('.reset');
   const newRoundButton = document.querySelector('.newRoundButton');
 
 
@@ -68,8 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let seconds = Math.floor(tailMs / msInSecond);
     tailMs = Math.floor((tailMs - msInSecond * seconds) / 10);
-
-
     let newRound = document.createElement('div');
     newRound.classList.add('roundArea');
     roundsDiv.prepend(newRound);
@@ -80,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let roundNumber = document.createElement('div');
     newRound.append(roundNumber);
     roundNumber.classList.add('roundNumber');
-    roundNumber.innerHTML =  roundClickCounter;
+    roundNumber.innerHTML = roundClickCounter;
 
     let roundTime = document.createElement('div');
     newRound.append(roundTime);
@@ -111,7 +108,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
-  stopButton.addEventListener('click', (event) => {
+
+  resetButton.addEventListener('click', (event) => {
+
     timerStop();
     timerClear();
 
@@ -124,8 +123,13 @@ document.addEventListener("DOMContentLoaded", () => {
     startPauseButton.classList.add("start");
     startPauseButton.innerText = "Start";
 
+    let parentElement = document.querySelector('#rounds');
+    removeAllChildNodes(parentElement);
+
+    roundClickCounter = 0;
+
   });
-  
+
   newRoundButton.addEventListener('click', (event) => {
 
     if (!isTimerStarted()) {
@@ -135,12 +139,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let lastLapMs = timerLastLap();
     displayLap(lastLapMs);
-    
+
     function incrementCounter() {
-      
+
       roundClickCounter++;
       return roundClickCounter;
-      
+
     }
 
     startPauseButton.classList.remove("pause");
