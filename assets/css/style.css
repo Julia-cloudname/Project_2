@@ -4,9 +4,11 @@ html {
   }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     border: none;
+    position: relative;
+    padding-bottom: 12px;
 }
 
 /* Styling heading */
@@ -17,18 +19,18 @@ h1 {
 }
 body {
     background: url("../images/background.webp") no-repeat center center;
-    font-family: Zaychik;
+    font-family: Zaychik; 
+    padding-bottom: 12px;
 }
 /* Styling time area */
 .timeTracker {
     background-color: rgb(90 94 94 / 86%);
     border-radius: 45px;
     width: 60%;
-    height: 38%;
-    margin: 0 auto;
+    height: 301%;
     margin-top: 30px;
     left: 275px;
-    position: absolute;
+    position: absolute; 
 }
 
 .timeArea {
@@ -37,22 +39,23 @@ body {
     align-items: center;
     margin-left: 200px;
     margin-right: 200px;
-    margin-top: 30px;
+    height: 85px;
     color: rgb(217,217,217);
+    position: relative;
+    margin-top: 35px;
 }
 
 .blockTime {
-    
-    width: 150px;
+    width: 134px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    margin-top: 20px;
 }
 .time {
-    
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 87px;
     font-size: 60px;
 }
 
@@ -61,11 +64,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 800px;
     margin: 0 auto;
     position: relative;
-    margin-top: 94px;
-    bottom: 45px;
+    margin-top: 92px;
+    bottom: 46px;
+    position: relative;
 }
 
 .button {
@@ -113,15 +116,15 @@ body {
 .roundArea {
     box-shadow: 0px 0px 5px #666;
     border-radius: 27px;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 8px;
     min-height: 20px;
     background-color: rgb(217,217,217, 0.4);
     display: flex;
     justify-content: space-between;
     align-items: left;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .roundConteiner {
@@ -131,10 +134,17 @@ body {
 .newRoundName {
     width: 80px;
     margin-left: 30px;
+    margin-top: 10px;
 }
 
 .newRoundTime {
-    width: 100px;
+    width: 195px;
+    margin-left: 142px;
+    margin-top: 10px;
+}
+
+.roundNumber {
+    margin-top: 10px;
 }
 
 /* footer */
@@ -153,3 +163,5 @@ footer p {
 #footer-autor {
     padding-top: 10px;
 }
+
+ 
