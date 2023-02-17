@@ -21,7 +21,7 @@ body {
 }
 /* Styling time area */
 .timeTracker {
-    background-color: rgb(148 154 154 / 86%);
+    background-color: rgb(90 94 94 / 86%);
     border-radius: 45px;
     width: 60%;
     height: 38%;
@@ -38,6 +38,7 @@ body {
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 30px;
+    color: rgb(217,217,217);
 }
 
 .blockTime {

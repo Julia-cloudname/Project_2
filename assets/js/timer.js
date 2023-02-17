@@ -5,6 +5,7 @@ let timerSavedMilliseconds = 0;
 let timerId = null;
 let timerOnTick = null;
 
+
 /**
  * The function increments the timer by the timerTickIntervalMs value and calls 
  * a callback function (timerOnTick) with the updated timer value as a parameter.
@@ -19,8 +20,8 @@ function timerTick() {
 /**
  * Function clears any existing timer and starts a new one with the timerTick 
  * function as a callback and interval timerTickIntervalMs.
- */ 
-function timerStart () {
+ */
+function timerStart() {
     clearInterval(timerId);
     timerId = setInterval(timerTick, timerTickIntervalMs);
     console.log('started', timerId);
@@ -67,6 +68,4 @@ function timerLastLap() {
 function setOnTick(onTick) {
     timerOnTick = onTick;
 }
-
-
 
