@@ -69,8 +69,4 @@ function setOnTick(onTick) {
     timerOnTick = onTick;
 }
 
-function removeAllChildNodes(parent) {
-    while (parent.firstChild) {
-      parent.removeChild(parent.firstChild);
-    }
-  }
+

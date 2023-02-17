@@ -90,6 +90,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setOnTick(displayTime);
 
+  function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+      parent.removeChild(parent.firstChild);
+    }
+  }
+
   //Listeners
   startPauseButton.addEventListener('click', (event) => {
     let btn = event.target;
@@ -135,20 +141,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isTimerStarted()) {
       return;
     }
-    incrementCounter();
+    roundClickCounter++;
 
     let lastLapMs = timerLastLap();
     displayLap(lastLapMs);
-
-    function incrementCounter() {
-
-      roundClickCounter++;
-      return roundClickCounter;
-
-    }
-
-    startPauseButton.classList.remove("pause");
-    startPauseButton.classList.add("start");
-    startPauseButton.innerText = "Start";
   });
 });
