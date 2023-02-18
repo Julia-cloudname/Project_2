@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const startPauseButton = document.querySelector('#start-pause');
   const resetButton = document.querySelector('.reset');
   const newRoundButton = document.querySelector('.newRoundButton');
-
+  const aboutTimerButton = document.getElementById('aboutTimerButton');
 
   /**
    * The function takes a number @param {*} value as input and @returns a string 
@@ -96,6 +96,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  function ShowAndHideButton() {
+  var aboutTimerSection = document.getElementById('textToShow');
+    if (aboutTimerSection.style.display == 'none') {
+      aboutTimerSection.style.display = 'block';
+    } else {
+      aboutTimerSection.style.display = 'none';
+    }
+  }
+
+
+
   //Listeners
   startPauseButton.addEventListener('click', (event) => {
     let btn = event.target;
@@ -145,5 +156,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let lastLapMs = timerLastLap();
     displayLap(lastLapMs);
+    timerClear();
   });
+
+  aboutTimerButton.addEventListener('click', (event) => {
+    ShowAndHideButton();
+  });
+
+
+
 });
