@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   //Listeners
-  startPauseButton.addEventListener('click', (event) => {
+  startPauseButton.addEventListener('click', 'keydown', (event) => {
     let btn = event.target;
 
     if (isTimerStarted()) {
@@ -122,6 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.classList.remove('start');
       timerStart();
     }
+
 
   });
 
