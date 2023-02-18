@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Domine&family=Playfair+Display+SC&display=swap');
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
 * {
     margin: 0px;
     padding: 0px;
     border: none;
     position: relative;
-    padding-bottom: 12px;
+    /* padding-bottom: 12px; */
 }
 
 /* Styling heading */
@@ -17,30 +18,60 @@ h1 {
     margin-top: 75px;
     font-size: 48px;
 }
+
+.howToUse {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 body {
     background: url("../images/background.webp") no-repeat center center;
-    font-family: Zaychik; 
-    padding-bottom: 12px;
+    font-family: Zaychik;
 }
+
 /* Styling time area */
+
+.timerContainer {
+
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .timeTracker {
     background-color: rgb(90 94 94 / 86%);
     border-radius: 45px;
-    width: 60%;
-    height: 301%;
-    margin-top: 30px;
-    left: 275px;
-    position: absolute; 
+    width: 40%;
+
+}
+
+.empty1 {
+    width: 80%;
+}
+
+.empty2 {
+    width: 10%;
 }
 
 .timeArea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    /* margin-left: 200px;
+    margin-right: 200px; */
     height: 85px;
-    color: rgb(217,217,217);
+    color: rgb(217, 217, 217);
     position: relative;
     margin-top: 35px;
 }
@@ -51,6 +82,7 @@ body {
     border-bottom-left-radius: 10px;
     margin-top: 20px;
 }
+
 .time {
     display: flex;
     justify-content: center;
@@ -76,9 +108,7 @@ body {
     border-radius: 30px;
     font-size: 18px;
     padding: 10px;
-    width: 180px;
-    margin-right: 30px;
-    margin-left: 30px;
+    width: 30%;
     transition: .2s ease-in-out;
     box-shadow: 5px 4px 6px #666;
     font-family: Zaychik;
@@ -90,11 +120,11 @@ body {
 }
 
 .reset {
-    background-color:  rgb(239 162 169 / 90%);
+    background-color: rgb(239 162 169 / 90%);
 }
 
 .resume {
-    background-color:  rgb(0, 95, 102);
+    background-color: rgb(0, 95, 102);
 }
 
 .pause {
@@ -107,11 +137,21 @@ body {
 }
 
 .newRoundButton {
-    background-color: rgb(217,217,217);
+    background-color: rgb(217, 217, 217);
 }
 
 
 /* Round area */
+
+.roundsField {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .roundArea {
     box-shadow: 0px 0px 5px #666;
@@ -119,7 +159,7 @@ body {
     padding: 5px;
     margin: 8px;
     min-height: 20px;
-    background-color: rgb(217,217,217, 0.4);
+    background-color: rgb(217, 217, 217, 0.4);
     display: flex;
     justify-content: space-between;
     align-items: left;
@@ -151,17 +191,15 @@ body {
 
 footer {
     height: 200px;
-     
+
 }
 
 footer p {
     text-align: center;
     color: black;
-    
-} 
+
+}
 
 #footer-autor {
     padding-top: 10px;
 }
-
- 
