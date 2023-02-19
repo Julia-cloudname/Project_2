@@ -2,6 +2,9 @@
 
 html {
     scroll-behavior: smooth;
+    background-image: -webkit-linear-gradient(270deg, rgb(255, 231, 226), rgb(238, 255, 234));
+    border-color: rgb(55, 133, 247);
+    height: 1500px;
 }
 
 * {
@@ -31,10 +34,10 @@ h1 {
 }
 
 body {
-    background: url("../images/background.webp") no-repeat center center;
     font-family: Zaychik;
 }
-
+ 
+ 
 /* Styling time area */
 
 .timerContainer {
@@ -50,9 +53,11 @@ body {
 }
 
 .timeTracker {
-    background-color: rgb(90 94 94 / 86%);
-    border-radius: 45px;
+    background-color: rgb(30 31 31 / 86%);
+    border-radius: 18px;
     width: 40%;
+    transition: .2s ease-in-out;
+    box-shadow: 13px 12px 20px 6px #666;
 
 }
 
@@ -109,12 +114,11 @@ body {
     font-size: 18px;
     padding: 10px;
     width: 30%;
-    transition: .2s ease-in-out;
-    box-shadow: 5px 4px 6px #666;
     font-family: Zaychik;
 }
 
 #aboutTimerButton {
+    background-color: rgb(99 96 96 / 11%);
     border: none;
     border-radius: 30px;
     font-size: 16px;
@@ -147,7 +151,7 @@ body {
 }
 
 .pause {
-    background-color: rgb(226 183 165 / 90%);
+    background-color: rgb(244 210 132 / 90%);
 }
 
 #startNewtask {
@@ -165,7 +169,7 @@ body {
 .roundsField {
     width: 100%;
     text-align: center;
-    margin: 0 auto;
+    margin: 25px auto;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -182,12 +186,14 @@ body {
     padding: 5px;
     margin: 8px;
     min-height: 20px;
-    background-color: rgb(217, 217, 217, 0.4);
+    background-color:  rgb(99 96 96 / 11%);
     display: flex;
     justify-content: space-between;
     align-items: left;
     margin-left: 200px;
     margin-right: 200px;
+    transition: .2s ease-in-out;
+    box-shadow: 5px 4px 6px #666;
 }
 
 .roundConteiner {
