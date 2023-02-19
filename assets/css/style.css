@@ -72,8 +72,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-left: 200px;
-    margin-right: 200px; */
     height: 85px;
     color: rgb(217, 217, 217);
     position: relative;
@@ -117,7 +115,8 @@ body {
 }
 
 #aboutTimerButton {
-    background-color: rgb(99 96 96 / 11%);
+    background-color: rgb(30 31 31 / 86%);
+    color: rgb(217, 217, 217);
     border: none;
     border-radius: 30px;
     font-size: 16px;
@@ -277,7 +276,7 @@ body {
     .instruction {
         width: 75%;
     }
-    
+
     .time {
         font-size: 40px;
     }
@@ -298,11 +297,11 @@ body {
         width: 120%;
     }
 
-    .buttons{
+    .buttons {
         bottom: 90px;
     }
 
-    .timeTracker{
+    .timeTracker {
         height: 190px;
     }
 
@@ -316,18 +315,131 @@ body {
 @media screen and (max-width:725px) {
 
     .timeTracker {
-        height: 160px;
+        height: 215px;
     }
 
     .buttons {
-        bottom: 85px;
+        display: inline;
+        bottom: 0;
     }
 
     .timeArea {
         margin-top: 0px;
     }
 
-    .empty {
-        
+    .button {
+        font-size: 14px;
+        height: 25px;
+        padding: 2px;
+        margin-top: 10px;
+        width: 40%;
     }
+
+
+
+}
+
+/*for big screen sizes from 620px wide and down*/
+@media screen and (max-width:620px) {
+
+    .timeTracker {
+        height: 215px;
+        width: 50%;
+    }
+
+    .blockTime {
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .instruction {
+        width: 100%;
+    }
+
+    .time {
+        font-size: 30px;
+    }
+
+    .button {
+        font-size: 14px;
+        height: 25px;
+        padding: 2px;
+        margin-top: 10px;
+        width: 40%;
+    }
+
+}
+
+/*for big screen sizes from 500px wide and down*/
+@media screen and (max-width:500px) {
+
+    #aboutTimerButton {
+        width: 45%;
+        font-size: 15px;
+    }
+
+    .timeTracker {
+        width: 60%;
+    }
+
+}
+
+/*for big screen sizes from 420px wide and down*/
+@media screen and (max-width:420px) {
+
+    #aboutTimerButton {
+        width: 45%;
+        font-size: 15px;
+    }
+
+    .timeTracker {
+        width: 70%;
+    }
+
+    .blockTime {
+        width: 80px;
+        margin-top: 8px;
+    }
+
+}
+
+
+/*for big screen sizes from 314px wide and down*/
+@media screen and (max-width:314px) {
+    .howToUse {
+        padding: 10px;
+    }
+
+    .timeTracker {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .button {
+        font-size: 17px;
+        height: 30px;
+        padding: 2px;
+        margin-top: 10px;
+        width: 49%;
+    }
+
+    .timeTracker {
+        height: 225px;
+    }
+
+    #aboutTimerButton {
+        width: 65%;
+        font-size: 17px;
+    }
+
+}
+
+/*for big screen sizes from 280px wide and down*/
+@media screen and (max-width:280px) {
+    .howToUse {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+   
 }
