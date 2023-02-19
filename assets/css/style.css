@@ -2,9 +2,9 @@
 
 html {
     scroll-behavior: smooth;
-    background-image: -webkit-linear-gradient(270deg, rgb(255, 231, 226), rgb(238, 255, 234));
+    background-image: -webkit-linear-gradient(7deg, rgb(255, 231, 226), rgb(238, 255, 234));
     border-color: rgb(55, 133, 247);
-    height: 1604px;
+    height: 110%;
 }
 
 * {
