@@ -157,7 +157,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let lastLapMs = timerLastLap();
     displayLap(lastLapMs);
-    timerClear();
   });
 
   aboutTimerButton.addEventListener('click', (event) => {

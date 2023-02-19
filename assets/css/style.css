@@ -12,7 +12,6 @@ html {
     padding: 0px;
     border: none;
     position: relative;
-    /* padding-bottom: 12px; */
 }
 
 /* Styling heading */
@@ -216,19 +215,4 @@ body {
     margin-top: 10px;
 }
 
-/* footer */
-
-footer {
-    height: 200px;
-
-}
-
-footer p {
-    text-align: center;
-    color: black;
-
-}
-
-#footer-autor {
-    padding-top: 10px;
-}
+ 
