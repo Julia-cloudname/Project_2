@@ -35,7 +35,7 @@ Overall, a stopwatch can be a helpful tool in a variety of settings to measure t
     * [***User Stories***](#user-stories)
     * [***Site Aims***](#site-aims)
     * [***Color Scheme***](#color-scheme)
-    * [***Typography**](#typography)
+    * [***Typography***](#typography)
 1. [**Current Features Common to all pages**](#current-features-common-to-all-pages)
     * [***Header Element:***](#header-element)
     * [***The rest of your features***](#features)
@@ -83,17 +83,9 @@ Throughout the page, there are three font used font-family Zaychik.
 * Buttons are presented in a way that is always obvious and reable
 * on smaller screens there is menu is provided to ensure mobile users have an optimal experience
 ​
-#### *features
-​
-* This is where you will place all of your features think about each section of the page include a screenshot and a few bullet points on how it's presented and why
-​
-## **Future-Enhancements**
-​
-A webpage is a living beast it's going to evolve past the initial stages of release generally, it's always good to discuss where you this the page may go in the future
-​
-* At the time of making this page i didn't have the understanding to actual send e-mails from the contact form so intergration with email.js to send e-mails would improve the users experience
-​
-* Due to the subject matter, we have discussed the idea of including a small JS game to engage the user
+#### **Features**
+
+The Stopwatch include possibility to track time, to count and save round. The bottom How to use displays instruction of use. 
 ​
 ## **Testing Phase**
 ​
