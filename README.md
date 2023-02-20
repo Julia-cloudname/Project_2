@@ -72,26 +72,16 @@ Users who need to treck time for dofferent purposes:
 ​
 For the page I decided dark-gray rgb(30 31 31 / 86%) color in office theme for contrast with background. Green bottom for start, pause - yellow, red - reset and light-gray for round, because they typically associated with these activities. For background I chose light rose rgb(255, 231, 226) and blue rgb(55, 133, 247) theme with gradient, because it unobtrusive theme, which not distract from time trecker.
 ​
-## **Typography**
-​
-Here is a chance to discuss the fonts used and again why, doesn't need to be crazy detail
-​
-* Throughout the page, there are three fonts used:
-  * Oswald - For the title to give it a strong presence.
-  * DM sans - For all other headings including the navbar. 
-  * Open sans - for all content text.
-​
-* DM and Open sans were both selected to complement each other and because they have a soft appearance which I thought best suited to the site
-* All fonts were sourced from Google fonts, as stated in the credits.
+### **Typography**
+
+Throughout the page, there are three font used font-family Zaychik.
 ​
 ## **Current Features Common to all pages**
 ​
-#### *Navigation Bar:*
-This is an example of the features section, your going to talk about each section of the page and what it offers for the navbar for example
-​
-* The user is given links to each section of the page
-* Each option is presented in a way that is always obvious and reable
-* on smaller screens a hamburger menu is provided to ensure mobile users have an optimal experience
+#### *Navigation:*
+
+* Buttons are presented in a way that is always obvious and reable
+* on smaller screens there is menu is provided to ensure mobile users have an optimal experience
 ​
 #### *features
 ​
