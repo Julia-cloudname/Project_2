@@ -187,7 +187,6 @@ body {
     background-color: rgb(99 96 96 / 11%);
     display: flex;
     justify-content: space-between;
-    align-items: left;
     margin-left: 200px;
     margin-right: 200px;
     transition: .2s ease-in-out;
