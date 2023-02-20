@@ -34,7 +34,6 @@ Overall, a stopwatch can be a helpful tool in a variety of settings to measure t
     * [***Target Audiences***](#target-audiences)
     * [***User Stories***](#user-stories)
     * [***Site Aims***](#site-aims)
-    * [***Wireframes***](#wireframes)
     * [***Color Scheme***](#color-scheme)
     * [***Typography**](#typography)
 1. [**Current Features Common to all pages**](#current-features-common-to-all-pages)
@@ -66,18 +65,12 @@ Users who need to treck time for dofferent purposes:
 * As user, I want to see dysplaying results of my time trecking 
 ​
 ### **Site Aims:**
-​
+
 * To provide users simple and usefuul time tracking tool
-​
-### **Wireframes:**
-​
-These are optional if you have any drawings or diagrams about how the site is intended to look include them here
 ​
 ### **Color Scheme:**
 ​
-Here discuss about the colours you have chosen for the design and the reasoning behind it, make sure to include hash values as well!
-​
-For the page we decided on a black (#000) and red theme (#a red hash i can't remember one) to hark back to the designs of the Sega megadrive which is symbolic of the retro gaming scene blah blah bull shit goes here
+For the page I decided dark-gray rgb(30 31 31 / 86%) color in office theme for contrast with background. Green bottom for start, pause - yellow, red - reset and light-gray for round, because they typically associated with these activities. For background I chose light rose rgb(255, 231, 226) and blue rgb(55, 133, 247) theme with gradient, because it unobtrusive theme, which not distract from time trecker.
 ​
 ## **Typography**
 ​
