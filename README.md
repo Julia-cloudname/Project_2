@@ -36,11 +36,8 @@ Overall, a stopwatch can be a helpful tool in a variety of settings to measure t
     * [***Site Aims***](#site-aims)
     * [***Color Scheme***](#color-scheme)
     * [***Typography***](#typography)
-1. [**Current Features Common to all pages**](#current-features-common-to-all-pages)
-    * [***Header Element:***](#header-element)
+1. [**Current Features**](#current-features-common-to-all-pages)
     * [***The rest of your features***](#features)
-    * [**Footer**](#footer)
-1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
 1. [**Tech**](#tech)
@@ -77,22 +74,40 @@ For the page I decided dark-gray rgb(30 31 31 / 86%) color in office theme for c
 Throughout the page, there are three font used font-family Zaychik.
 ​
 ## **Current Features Common to all pages**
-​
+
 #### *Navigation:*
 
 * Buttons are presented in a way that is always obvious and reable
-* on smaller screens there is menu is provided to ensure mobile users have an optimal experience
+* There is a menu on smaller screens is provided to ensure mobile users have an optimal experience
 ​
 #### **Features**
 
 The Stopwatch include possibility to track time, to count and save round. The bottom How to use displays instruction of use. 
 ​
 ## **Testing Phase**
-​
-This is the hardest bit of the readme, when we have completed a page we need to discuss testing.
-​
-Here is a good idea to talk about how and why you have tested with certain tools and validators so here a list of things to talk through
-​
+
+##### HTML 
+* No errors detected when run through the official [W3C HTML Validation Service](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjulia-cloudname.github.io%2FProject_2%2F)
+
+
+##### CSS
+* CSS – no errors were found when passing through the official [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjulia-cloudname.github.io%2FProject_2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+
+##### Lighthouse
+
+Results from Lighthouse testing:
+
+* Mobile 
+
+
+* Desctop
+
+
+
+
+
+
 * Responsiveness - How do you test this, dev tools? checking on multiple devices?
 ​
 * Functionality - Each feature needs to be tested before something is complete, talk about the process, click each link check each image, does form validation work, if your using javascript or anything else, does it always behave as the user expects
