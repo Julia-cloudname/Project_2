@@ -29,7 +29,7 @@ Overall, a stopwatch can be a helpful tool in a variety of settings to measure t
  
 ​
 ## Table of contents:
-1. [**Site Overview**](#site-overview)
+1. [**Site Overview**](#stopwatch)
 1. [**Planning stage**](#planning-stage)
     * [***Target Audiences***](#target-audiences)
     * [***User Stories***](#user-stories)
@@ -54,20 +54,16 @@ Overall, a stopwatch can be a helpful tool in a variety of settings to measure t
 ## **Planning stage**
 ### **Target Audiences:**
 ​
-This section is a breakdown of the target audience 3 or 4 bullet points so using our example
-​
-* Users interested in retro gaming 
-* Users interested in a safe environment to gather and have fun
-* Users interested in activities in the Sheffield area
+Users who need to treck time for dofferent purposes:
+
+* Users, who ned timer for personal aims - in sport, at home, for board games ect
+* Users who need time trecker for working purposes - freelansers, full-time workers, who want to track task completion time for improve personal efficiency
 ​
 ### **User Stories:**
-​
-User stories are more what the user wants from the site in terms of features and presentation
-​
+
 * As a user, I want to see the subject matter of the page.
-* As a user, I want to navigate the page to find what I require quickly and easily.
-* As a user, I want to learn more about what the business offers
-* As a user, I want to reach out and contact the business
+* As a user, I want to navigate the page and buttons to find what I require quickly and easily.
+* As user, I want to see dysplaying results of my time trecking 
 ​
 ### **Site Aims:**
 ​
