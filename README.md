@@ -67,12 +67,7 @@ Users who need to treck time for dofferent purposes:
 ​
 ### **Site Aims:**
 ​
-This is optional but offers the insight into what the aim of the project are
-​
-* To inform the user on opening times
-* To inform the user about what we offer when they are here
-* To offer the user an oppertunity to get in contact
-​
+* To provide users simple and usefuul time tracking tool
 ​
 ### **Wireframes:**
 ​
