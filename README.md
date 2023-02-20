@@ -1,10 +1,32 @@
-# **Stop watch**
+# **Stopwatch**
 ## **Overview**
-This is where you give a brief overview of the page so, like an intro to the business or project followed by a brief talk about who the page is targeted at for example for a retro gaming arcade.
+The stopwatch can be used in a variety of ways in real life - in work, in studying, at home.
+
+* <strong>Time Management</strong>: 
+
+A stopwatch can help you manage your time better by tracking the amount of time you spend on different tasks. For example, you can use the stopwatch to time how long it takes you to complete a task, such as exercising, cleaning house or preparing a meal.
+
+* <strong>Sports and Fitness</strong>: 
+
+A stopwatch is commonly used in sports and fitness activities to measure the time it takes to complete an exercise or track your progress. For example, you can use the stopwatch to time your laps while running or swimming, or to time your rest intervals during sessions in the gym.
+
+* <strong>Cooking and Baking</strong>: 
+
+A stopwatch can also be useful in the kitchen when cooking or baking. You can use it to time how long you need to cook or bake a dish, or to keep track of the time for different cooking steps.
+
+* <strong>Studying and Work</strong>: 
+
+A stopwatch can be used to help you study or work more efficiently by tracking how long you spend on specific tasks or assignments. You can use it to time how long you study or work on a project, and then take breaks for a set amount of time to improve productivity and focus.
+
+* <strong>Games and Competitions</strong>: 
+
+A stopwatch can also be used in games and competitions, such as board games or track and field events . You can use it to time races, monitor how long each player takes to make their move, or to determine the winner in a tiebreaker situation.
+
+Overall, a stopwatch can be a helpful tool in a variety of settings to measure time accurately and efficiently. The provided link offers a simple, user-friendly interface that can be used for all these purposes.
+
 ​
-Retro arcade is a local business in the Sheffield area looking to offer young people a place to come and hangout and play old school games in a relaxed and friendly environment. Due to lower turnout than expected they have asked for a page to be built to spread the word in the community and wider areas. Ideally the business is intended to target younger gamers primarily but also be appealing to older people interested in a gaming experience 
-​
-![Am I responsive screenshot](imagelocation so maybe docs/image.jpg)
+![Responsice Mockup](assets/images/StopwatchScreen.webp)
+ 
 ​
 ## Table of contents:
 1. [**Site Overview**](#site-overview)
