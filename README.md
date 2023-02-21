@@ -99,21 +99,38 @@ The Stopwatch include possibility to track time, to count and save round. The bo
 Results from Lighthouse testing:
 
 * Mobile 
-
+![Responsice Mockup](assets/images/lighthouse-mobile.webp)
 
 * Desctop
+![Responsice Mockup](assets/images/lighthouse-desktop.webp)
 
+Online-testing: on site [bluetree.ai](https://ui.dev/amiresponsive?url=https://julia-cloudname.github.io/Project_2/) 
 
+*Manual testing*: 
 
+Devices:
 
+- Apple MacBook Pro 2015 | 15.4"
+- Acer Aspire 7750Z | 17.3"
+- iPhone 8 Plus
+- Samsung Galaxy M20
 
+Browsers:
 
-* Responsiveness - How do you test this, dev tools? checking on multiple devices?
-​
-* Functionality - Each feature needs to be tested before something is complete, talk about the process, click each link check each image, does form validation work, if your using javascript or anything else, does it always behave as the user expects
-​
-* Validators - Here include images from w3c html validator and css jigsaw (jshint for js and pep8 for python) and the results that came from it
-​
+- Chrom
+- Safari
+- Brave
+- Mozilla Firefox
+
+Functionality - during testing site on all available devices site behave was as the user expects, buttons work correctly.
+
+- I clicked on START button starts timer. When timer is working the user see yellow button "Pause" instead "Start". 
+- Button "PAUSE" pauses the timer, user see "Start" button instead "Pause".
+- Button "ROUND" create element with saved results of last lap".
+- Button "RESET" stops timer and reset all data on 0 and clear round elements. 
+- Button "HOW TO USE TIMER" open area with tutorial and hide it by click.
+
+Responsiveness - website was checked on responsiveness on dev tools, special items and multiple devices by manual testing.
 ​
 ## **Bugs**
 ​
