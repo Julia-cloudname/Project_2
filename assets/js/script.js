@@ -83,9 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
     newRound.append(roundTime);
     roundTime.classList.add('newRoundTime');
     roundTime.innerText = `${hours} : ${minutes} : ${seconds} : ${tailMs}`;
-
-    console.log(hours, minutes, seconds, tailMs);
-
   }
 
   setOnTick(displayTime);
@@ -116,14 +113,17 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.classList.add('start');
       btn.classList.remove('pause');
       timerStop();
+      newRoundButton.classList.add('noActive');
+      newRoundButton.classList.remove('newRoundButton');
+      
     } else {
       btn.textContent = 'Pause';
       btn.classList.add('pause');
       btn.classList.remove('start');
       timerStart();
+      newRoundButton.classList.add('newRoundButton');
+      newRoundButton.classList.remove('noActive');
     }
-    
-
   });
 
 
@@ -149,11 +149,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   newRoundButton.addEventListener('click', (event) => {
-
+    const btn = event.target;
     if (!isTimerStarted()) {
       return;
     }
-    roundClickCounter++;
+      roundClickCounter++;
 
     let lastLapMs = timerLastLap();
     displayLap(lastLapMs);

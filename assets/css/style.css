@@ -161,6 +161,9 @@ body {
     background-color: rgb(217, 217, 217);
 }
 
+.noActive{
+    color: rgb(136 136 136);
+}
 
 /* Round area */
 
