@@ -106,6 +106,11 @@ Results from Lighthouse testing:
 
 Online-testing: on site [bluetree.ai](https://ui.dev/amiresponsive?url=https://julia-cloudname.github.io/Project_2/) 
 
+No any errors on Javascript validator [jshint.com](https://jshint.com/):
+
+![Responsice Mockup](assets/images/jshint.webp)
+
+
 *Manual testing*: 
 
 Devices:
