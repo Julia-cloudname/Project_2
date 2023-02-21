@@ -148,32 +148,28 @@ Responsiveness - website was checked on responsiveness on dev tools, special ite
 ​
 ***
 ## **Deployment**
-I deployed the page on GitHub pages via the following procedure: -
-​
-1. From the project's [repository](pageurl), go to the **Settings** tab.
-2. From the left-hand menu, select the **Pages** tab.
-3. Under the **Source** section, select the **Main** branch from the drop-down menu and click **Save**.
-4. A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
-​
-You  can find the live site via the following URL - [live webpage](https://yoururlhere)
-***
+
+The site was deployed to GitHub pages. The steps to deploy:
+
+* In the GitHub repository, navigate to the Settings tab
+* From the menu on the left side of the screen, click on 'Pages'
+* From the 'Source' section, click on the dropdown menu and select 'Deploy from branch'.  
+* In menu Branch below select 'main' branch and folder 'root'
+
+Clicking 'save' will refresh the page and publish the site.  Note, publishing will take a short amount of time.
+
+The site is currently live and deployed in GitHub:  https://julia-cloudname.github.io/Project_2
 ​
 ## **Tech**
 ​
-Here mention what technologies you've used for example
-​
+Used technologies:
+
 - HTML
 - CSS
+- JavaScript
 ​
 ## **Credits**
-### **Honorable mentions**
-​
-It's always nice to mention those that helped you get there, if people gave you support on slack or the local cat scared you into completing give them a mention!
-​
-### **Content:**
-​
-If you took any code from online source and by this i mean copy paste with zero changes mention it here!
-  
-### **Media:**
-​
-Links to the locations of images if you've used them from an online source!
+
+**Fonts**
+
+* [Google Fonts](https://fonts.google.com/)
