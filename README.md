@@ -107,10 +107,12 @@ The Stopwatch include possibility to track time, to count and save round. The bo
 ## **Testing Phase**
 
 ##### HTML 
+
 * No errors detected when run through the official [W3C HTML Validation Service](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjulia-cloudname.github.io%2FProject_2%2F)
 
 
 ##### CSS
+
 * CSS – no errors were found when passing through the official [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjulia-cloudname.github.io%2FProject_2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 
@@ -121,7 +123,7 @@ Results from Lighthouse testing:
 * Mobile 
 ![Responsice Mockup](assets/images/lighthouse-mobile.webp)
 
-* Desctop
+* Desktop
 ![Responsice Mockup](assets/images/lighthouse-desktop.webp)
 
 Online-testing: on site [bluetree.ai](https://ui.dev/amiresponsive?url=https://julia-cloudname.github.io/Project_2/) 
