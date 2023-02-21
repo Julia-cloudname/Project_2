@@ -48,7 +48,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .timeTracker {
@@ -57,7 +56,6 @@ body {
     width: 40%;
     transition: .2s ease-in-out;
     box-shadow: 13px 12px 20px 6px #666;
-
 }
 
 .empty1 {
@@ -94,6 +92,10 @@ body {
 }
 
 /* Style of buttons */
+.hide {
+    display: none;
+}
+
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -165,7 +167,7 @@ body {
     color: rgb(136 136 136);
 }
 
-/* Round area */
+/* Styling round area */
 
 .roundsField {
     width: 100%;
@@ -336,9 +338,6 @@ body {
         margin-top: 10px;
         width: 40%;
     }
-
-
-
 }
 
 /*for big screen sizes from 620px wide and down*/
@@ -369,7 +368,6 @@ body {
         margin-top: 10px;
         width: 40%;
     }
-
 }
 
 /*for big screen sizes from 500px wide and down*/
@@ -383,7 +381,6 @@ body {
     .timeTracker {
         width: 60%;
     }
-
 }
 
 /*for big screen sizes from 420px wide and down*/
@@ -402,7 +399,6 @@ body {
         width: 80px;
         margin-top: 8px;
     }
-
 }
 
 
@@ -433,7 +429,6 @@ body {
         width: 65%;
         font-size: 17px;
     }
-
 }
 
 /*for big screen sizes from 280px wide and down*/
@@ -441,7 +436,5 @@ body {
     .howToUse {
         padding: 10px;
         margin: 10px auto;
-    }
-
-   
+    }  
 }

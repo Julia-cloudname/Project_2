@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const msInMinute = msInSecond * 60;
   const msInHour = msInMinute * 60;
 
-  //Buttons
+  //Control buttons area
   const startPauseButton = document.querySelector('#start-pause');
   const resetButton = document.querySelector('.reset');
   const newRoundButton = document.querySelector('.newRoundButton');
   const aboutTimerButton = document.getElementById('aboutTimerButton');
 
   /**
-   * The function takes a number @param {*} value as input and @returns a string 
+   * The function takes a @param {number} value as input and @returns a string 
    * that represents the same number with two digits. 
    */
   function format2Digits(value) {
@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
     return value;
   }
 
-
   /**
-   * The function takes a time duration @param {*} in milliseconds as input and displays 
+   * The function takes a time duration in milliseconds as input and displays 
    * it in hours, minutes, seconds, and milliseconds in divs. 
+   * @param {number} milliseconds - time duration in milliseconds
    */
   function displayTime(milliseconds) {
 
@@ -52,7 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /**
-   * This function takes in @param {*} number of milliseconds and displays it in hours, minutes, seconds, 
+   * This function takes in 
+   * @param {number} number of milliseconds and displays it in hours, minutes, seconds, 
    * and milliseconds format. It then creates a new round area with a round name and the formatted time, 
    * and prepends it to a div called roundsDiv.
    */
@@ -87,24 +88,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setOnTick(displayTime);
 
+  /**
+   * Function remove all child element. Takes
+   * @param {parent} parent 
+   */
   function removeAllChildNodes(parent) {
     while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
     }
   }
 
+  /**
+   * Function show and hide element 
+   */
   function ShowAndHideButton() {
-    var aboutTimerSection = document.getElementById('textToShow');
-    if (aboutTimerSection.style.display == 'none') {
-      aboutTimerSection.style.display = 'block';
+    const aboutTimerSection = document.getElementById('textToShow');
+    if (aboutTimerSection.classList.contains('hide')) {
+      aboutTimerSection.classList.remove('hide');
     } else {
-      aboutTimerSection.style.display = 'none';
+      aboutTimerSection.classList.add('hide');
     }
   }
 
-
-
   //Listeners
+
+  // Listener on Start/Pause button by click event. Check is timer start and change button behavior depend on it state
   startPauseButton.addEventListener('click', (event) => {
     let btn = event.target;
 
@@ -126,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-
+  // Listener on Reset button. Stops timer, reset everything on 0 and remove new rounds by click event from HTML if they were created
   resetButton.addEventListener('click', (event) => {
 
     timerStop();
@@ -157,7 +165,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
   });
-
+  
+  // Listener on Round button, creats new round elements in HTML by click event
   newRoundButton.addEventListener('click', (event) => {
 
     if (!isTimerStarted()) {
@@ -168,12 +177,13 @@ document.addEventListener("DOMContentLoaded", () => {
     let lastLapMs = timerLastLap();
     displayLap(lastLapMs);
   });
-
+  
+  //Listener on How to use button. Show and hide element by click event 
   aboutTimerButton.addEventListener('click', (event) => {
     ShowAndHideButton();
   });
 
-
+  //Listeners on keyboard events. Repet behavior of click events: Start set on Spase, Round on Shift and Reset on R
   addEventListener('keydown', (event) => {
   
     let btn = document.getElementById('start-pause');
@@ -246,6 +256,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
   });
-
 
 });
