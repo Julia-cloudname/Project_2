@@ -42,10 +42,6 @@ Overall, a stopwatch can be a helpful tool in a variety of settings to measure t
 1. [**Deployment**](#deployment)
 1. [**Tech**](#tech)
 1. [**Credits**](#credits)
-    * [**Honorable mentions**](#honorable-mentions)
-    * [**General reference**](#general-reference)
-    * [**Content**](#content)
-    * [**Media**](#media)
 ​
 ## **Planning stage**
 ### **Target Audiences:**
@@ -83,6 +79,30 @@ Throughout the page, there are three font used font-family Zaychik.
 #### **Features**
 
 The Stopwatch include possibility to track time, to count and save round. The bottom How to use displays instruction of use. 
+
+<details><summary>The Start button and the Space key duplicate each other and start the stopwatch:</Summary>
+<img src="https://github.com/Julia-cloudname/Project_2/blob/main/assets/images/start-button.webp"></details> 
+
+<details><summary>The Pause button and the Space key duplicate each other and pause the stopwatch:</Summary>
+
+<img src="https://github.com/Julia-cloudname/Project_2/blob/main/assets/images/pause-button.webp"></details> 
+
+<details><summary>The Round button and the Shift key save and display the result of the last lap. It's dysplay:</Summary>
+
+<img src="https://github.com/Julia-cloudname/Project_2/blob/main/assets/images/round-active-button.webp"></details> 
+
+<details><summary>The button is displayed in a dimmer font when the timer is not running, which makes it clear to the user that it is inactive:</Summary>
+
+<img src="https://github.com/Julia-cloudname/Project_2/blob/main/assets/images/round-not-active-button.webp"></details> 
+
+<details><summary>The Reset button and the R key reset the timer value, stop it and delete the results of all previous rounds:</Summary>
+
+<img src="https://github.com/Julia-cloudname/Project_2/blob/main/assets/images/reset-button.webp"></details> 
+
+<details><summary>The button How to use the timer opens and hides the text with the instructions for use when you click on it:</Summary>
+
+<img src="https://github.com/Julia-cloudname/Project_2/blob/main/assets/images/use-button.webp"></details> 
+
 ​
 ## **Testing Phase**
 
