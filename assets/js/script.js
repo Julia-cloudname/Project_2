@@ -146,6 +146,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     roundClickCounter = 0;
 
+    if (isTimerStarted()) {
+
+      newRoundButton.classList.add('newRoundButton');
+      newRoundButton.classList.remove('noActive');
+      
+    } else {
+      newRoundButton.classList.add('noActive');
+      newRoundButton.classList.remove('newRoundButton');
+    }
+
   });
 
   newRoundButton.addEventListener('click', (event) => {
