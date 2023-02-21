@@ -133,12 +133,10 @@ Functionality - during testing site on all available devices site behave was as 
 Responsiveness - website was checked on responsiveness on dev tools, special items and multiple devices by manual testing.
 ​
 ## **Bugs**
-​
-We always have bugs in development, a few bullet points here to talk about bugs you found and how you fixed them, in later projects this will be more detailed
-​
-* Issue - When on mobile the user had horizontal scroll with items overflowing
-* Cause - The images had absolute positioning and caused them to go off screen
-* Resolution - Changed the width of the image to stay within the confines of the screen.
+
+* Issue - When user click on button "New round", creates new rounds even if the timer doesn't work and displays 0.
+* Cause -  there are no cheking is timer start or not
+* Resolution - add if-condition to New round button listenets, which return nothing if the timer doesn't work (the button New round isn't active)
 ​
 ***
 ## **Deployment**
