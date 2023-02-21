@@ -134,9 +134,17 @@ Responsiveness - website was checked on responsiveness on dev tools, special ite
 ​
 ## **Bugs**
 
-* Issue - When user click on button "New round", creates new rounds even if the timer doesn't work and displays 0.
+1
+
+* Issue - When user click on button "New round", creates new round even if the timer doesn't work and displays 0.
 * Cause -  there are no cheking is timer start or not
 * Resolution - add if-condition to New round button listenets, which return nothing if the timer doesn't work (the button New round isn't active)
+
+2
+
+* Issue - When user click on button "New round", rounds start to display from buttom to top and user don't see the value of last round till scroll on the bottom
+* Cause -  rounds display in reverse order
+* Resolution - change method of adding rounds to html fron .append() to prepend(), now user can see the last round on the top of list
 ​
 ***
 ## **Deployment**
