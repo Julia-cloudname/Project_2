@@ -14,20 +14,23 @@
     <title>Stopwatch</title>
 </head>
 
-<body>
-    <div class="header"> <h1>Stopwatch</h1></div>
+    <body>
+    <div class="header">
+        <h1>Stopwatch</h1>
+    </div>
 
     <div class="howToUse">
         <div class="empty"></div>
         <div class="instruction">
             <button id="aboutTimerButton" onclick="ShowAndHideButton()">How to use timer</button>
             <div id="textToShow" style="display:none">
-                 <p><strong>Start</strong> - start the timer</p>
-                 <p><strong>Pause</strong> - pause the timer</p>
-                 <p><strong>Round</strong> - stop the round (save the time that has <br> passed since the start of the timer/last round)</p>
-                 <p><strong>Reset</strong> - reset everything</p>
+                <p><strong>Start</strong> - start the timer</p>
+                <p><strong>Pause</strong> - pause the timer</p>
+                <p><strong>Round</strong> - stop the round (save the time that has <br> passed since the start of the
+                    timer/last round)</p>
+                <p><strong>Reset</strong> - reset everything</p>
             </div>
-        </div>   
+        </div>
         <div class="empty"></div>
     </div>
 
@@ -74,7 +77,7 @@
 
             <div class="buttons">
                 <div class="empty2 leftRightEmpty"></div>
-                <button class="button newRoundButton noActive" >Round</button>
+                <button class="button newRoundButton noActive">Round</button>
                 <div class="empty2"></div>
                 <button class="button reset">Reset</button>
                 <div class="empty2"></div>
@@ -89,14 +92,11 @@
 
     <div class="roundsField">
         <div></div>
-    <div id="rounds">
-       
-    </div> <!-- This element is not displayed until the user clicks the Round button. -->
-    <div></div>
+        <div id="rounds">
+
+        </div> <!-- This element is not displayed until the user clicks the Round button. -->
+        <div></div>
     </div>
-
-    
-
-</body>
+    </body>
 
 </html>

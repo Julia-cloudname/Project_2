@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let roundName = document.createElement('div');
     newRound.append(roundName);
     roundName.classList.add('newRoundName');
-    roundName.innerText = 'Round'
+    roundName.innerText = 'Round';
     let roundNumber = document.createElement('div');
     newRound.append(roundNumber);
     roundNumber.classList.add('roundNumber');
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function ShowAndHideButton() {
-  var aboutTimerSection = document.getElementById('textToShow');
+    var aboutTimerSection = document.getElementById('textToShow');
     if (aboutTimerSection.style.display == 'none') {
       aboutTimerSection.style.display = 'block';
     } else {
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
       timerStop();
       newRoundButton.classList.add('noActive');
       newRoundButton.classList.remove('newRoundButton');
-      
+
     } else {
       btn.textContent = 'Pause';
       btn.classList.add('pause');
@@ -132,10 +132,10 @@ document.addEventListener("DOMContentLoaded", () => {
     timerStop();
     timerClear();
 
-    millisecondDiv.textContent = "00"
-    secondDiv.textContent = "00"
-    minuteDiv.textContent = "00"
-    hourDiv.textContent = "00"
+    millisecondDiv.textContent = "00";
+    secondDiv.textContent = "00";
+    minuteDiv.textContent = "00";
+    hourDiv.textContent = "00";
 
     startPauseButton.classList.remove("pause");
     startPauseButton.classList.add("start");
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       newRoundButton.classList.add('newRoundButton');
       newRoundButton.classList.remove('noActive');
-      
+
     } else {
       newRoundButton.classList.add('noActive');
       newRoundButton.classList.remove('newRoundButton');
@@ -159,11 +159,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   newRoundButton.addEventListener('click', (event) => {
-    const btn = event.target;
+
     if (!isTimerStarted()) {
       return;
     }
-      roundClickCounter++;
+    roundClickCounter++;
 
     let lastLapMs = timerLastLap();
     displayLap(lastLapMs);
@@ -173,6 +173,79 @@ document.addEventListener("DOMContentLoaded", () => {
     ShowAndHideButton();
   });
 
+
+  addEventListener('keydown', (event) => {
+  
+    let btn = document.getElementById('start-pause');
+
+    if (event.key === 'r') {
+      timerStop();
+      timerClear();
+  
+      millisecondDiv.textContent = "00";
+      secondDiv.textContent = "00";
+      minuteDiv.textContent = "00";
+      hourDiv.textContent = "00";
+  
+      startPauseButton.classList.remove("pause");
+      startPauseButton.classList.add("start");
+      startPauseButton.innerText = "Start";
+  
+      let parentElement = document.querySelector('#rounds');
+      removeAllChildNodes(parentElement);
+  
+      roundClickCounter = 0;
+  
+      if (isTimerStarted()) {
+          newRoundButton.classList.add('newRoundButton');
+          newRoundButton.classList.remove('noActive');
+      } else {
+          newRoundButton.classList.add('noActive');
+          newRoundButton.classList.remove('newRoundButton');
+      }
+
+      if (event.key === 'Shift') {
+        if (!isTimerStarted()) {
+          return;
+        }
+        roundClickCounter++;
+    
+        let lastLapMs = timerLastLap();
+        displayLap(lastLapMs);
+      }
+  
+    }
+  
+    if (event.code === 'Space') {
+      window.event.preventDefault();
+      if (isTimerStarted()) {
+        btn.textContent = 'Start';
+        btn.classList.add('start');
+        btn.classList.remove('pause');
+        timerStop();
+        newRoundButton.classList.add('noActive');
+        newRoundButton.classList.remove('newRoundButton');
+      } else {
+        btn.textContent = 'Pause';
+        btn.classList.add('pause');
+        btn.classList.remove('start');
+        timerStart();
+        newRoundButton.classList.add('newRoundButton');
+        newRoundButton.classList.remove('noActive');
+      }
+    }
+
+    if (event.key === 'Shift') {
+      if (!isTimerStarted()) {
+        return;
+      }
+      roundClickCounter++;
+  
+      let lastLapMs = timerLastLap();
+      displayLap(lastLapMs);
+    }
+
+  });
 
 
 });
