@@ -126,7 +126,6 @@ Results from Lighthouse testing:
 * Desktop
 ![Responsice Mockup](assets/images/lighthouse-desktop.webp)
 
-Online-testing: on site [bluetree.ai](https://ui.dev/amiresponsive?url=https://julia-cloudname.github.io/Project_2/) 
 
 No any errors on Javascript validator [jshint.com](https://jshint.com/):
 
@@ -149,15 +148,21 @@ Browsers:
 - Brave
 - Mozilla Firefox
 
-Functionality - during testing site on all available devices site behave was as the user expects, buttons work correctly.
+Testing functionality - during testing site on all available devices site behave was as the user expects, buttons work correctly.
 
-- I clicked on START button starts timer. When timer is working the user see yellow button "Pause" instead "Start". 
-- Button "PAUSE" pauses the timer, user see "Start" button instead "Pause".
-- Button "ROUND" create element with saved results of last lap".
-- Button "RESET" stops timer and reset all data on 0 and clear round elements. 
-- Button "HOW TO USE TIMER" open area with tutorial and hide it by click.
+☑️ I clicked on START button starts timer. When timer is working the user see yellow button "Pause" instead "Start". 
 
-Responsiveness - website was checked on responsiveness on dev tools, special items and multiple devices by manual testing.
+☑️ Button "PAUSE" pauses the timer, user see "Start" button instead "Pause".
+
+☑️ Button "ROUND" create element with saved results of last lap".
+
+☑️ Button "RESET" stops timer and reset all data on 0 and clear round elements. 
+
+☑️ Button "HOW TO USE TIMER" open area with tutorial and hide it by click.
+
+Testing responsiveness - website was checked on responsiveness on dev tools, special items and multiple devices by manual testing.
+
+Online-testing: on site [bluetree.ai](https://ui.dev/amiresponsive?url=https://julia-cloudname.github.io/Project_2/)  
 ​
 ## **Bugs**
 
