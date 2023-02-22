@@ -13,6 +13,9 @@ html {
     border: none;
     position: relative;
 }
+body {
+    font-family: Zaychik;
+}
 
 /* Styling heading */
 h1 {
@@ -21,6 +24,7 @@ h1 {
     font-size: 48px;
 }
 
+/* How to use area */
 .howToUse {
     width: 100%;
     text-align: center;
@@ -32,15 +36,8 @@ h1 {
     padding: 20px;
 }
 
-body {
-    font-family: Zaychik;
-}
-
-
 /* Styling time area */
-
 .timerContainer {
-
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -168,7 +165,6 @@ body {
 }
 
 /* Styling round area */
-
 .roundsField {
     width: 100%;
     text-align: center;
