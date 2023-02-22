@@ -1,10 +1,10 @@
 # **Stopwatch**
 ## **Overview**
-The stopwatch can be used in a variety of ways in real life - in work, in studying, at home.
+The stopwatch can be used in a variety of ways in real life - at work, in studying, and at home.
 
 * <strong>Time Management</strong>: 
 
-A stopwatch can help you manage your time better by tracking the amount of time you spend on different tasks. For example, you can use the stopwatch to time how long it takes you to complete a task, such as exercising, cleaning house or preparing a meal.
+A stopwatch can help you manage your time better by tracking the amount of time you spend on different tasks. For example, you can use the stopwatch to time how long it takes you to complete a task, such as exercising, cleaning the house or preparing a meal.
 
 * <strong>Sports and Fitness</strong>: 
 
@@ -20,7 +20,7 @@ A stopwatch can be used to help you study or work more efficiently by tracking h
 
 * <strong>Games and Competitions</strong>: 
 
-A stopwatch can also be used in games and competitions, such as board games or track and field events . You can use it to time races, monitor how long each player takes to make their move, or to determine the winner in a tiebreaker situation.
+A stopwatch can also be used in games and competitions, such as board games or track and field events. You can use it to time races, monitor how long each player takes to make their move or determine the winner in a tiebreaker situation.
 
 Overall, a stopwatch can be a helpful tool in a variety of settings to measure time accurately and efficiently. The provided link offers a simple, user-friendly interface that can be used for all these purposes.
 
@@ -36,7 +36,7 @@ Overall, a stopwatch can be a helpful tool in a variety of settings to measure t
     * [***Site Aims***](#site-aims)
     * [***Color Scheme***](#color-scheme)
     * [***Typography***](#typography)
-1. [**Current Features**](#current-features-common-to-all-pages)
+1. [**Current Features**](#current-features)
     * [***The rest of your features***](#features)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
@@ -46,39 +46,39 @@ Overall, a stopwatch can be a helpful tool in a variety of settings to measure t
 ## **Planning stage**
 ### **Target Audiences:**
 ​
-Users who need to treck time for dofferent purposes:
+Users who need to track time for different purposes:
 
-* Users, who ned timer for personal aims - in sport, at home, for board games ect
-* Users who need time trecker for working purposes - freelansers, full-time workers, who want to track task completion time for improve personal efficiency
+* Users, who need a timer for personal aims - in sports, at home, for board games etc
+* Users who need a time-tracker for working purposes - freelancers, full-time workers, who want to track task completion time to improve personal efficiency
 ​
 ### **User Stories:**
 
 * As a user, I want to see the subject matter of the page.
 * As a user, I want to navigate the page and buttons to find what I require quickly and easily.
-* As user, I want to see dysplaying results of my time trecking 
+* As a user, I want to see displaying results of my time tracking 
 ​
 ### **Site Aims:**
 
-* To provide users simple and usefuul time tracking tool
+* To provide users simple and useful time-tracking tool
 ​
 ### **Color Scheme:**
 ​
-For the page I decided dark-gray rgb(30 31 31 / 86%) color in office theme for contrast with background. Green bottom for start, pause - yellow, red - reset and light-gray for round, because they typically associated with these activities. For background I chose light rose rgb(255, 231, 226) and blue rgb(55, 133, 247) theme with gradient, because it unobtrusive theme, which not distract from time trecker.
+For the page, I decided on dark-grey RGB (30 31 31 / 86%) colour in the official theme for contrast with the background. Green bottom for start, pause - yellow, red - reset and light grey for round, because they are typically associated with these activities. For the background, I chose a light rose RGB (255, 231, 226) and blue RGB (55, 133, 247) theme with gradient because it unobtrusive theme, which does not distract from the time tracker.
 ​
 ### **Typography**
 
-Throughout the page, there are three font used font-family Zaychik.
+Throughout the page, there is one font used font-family Zaychik.
 ​
-## **Current Features Common to all pages**
+## **Current Features**
 
 #### *Navigation:*
 
-* Buttons are presented in a way that is always obvious and reable
+* Buttons are presented in a way that is always obvious and reliable
 * There is a menu on smaller screens is provided to ensure mobile users have an optimal experience
 ​
 #### **Features**
 
-The Stopwatch include possibility to track time, to count and save round. The bottom How to use displays instruction of use. 
+The Stopwatch includes the possibility to track time, count and save rounds. The bottom How to use displays instructions for use. 
 
 <details><summary>The Start button and the Space key duplicate each other and start the stopwatch:</Summary>
 <img src="https://github.com/Julia-cloudname/Project_2/blob/main/assets/images/start-button.webp"></details> 
@@ -87,7 +87,7 @@ The Stopwatch include possibility to track time, to count and save round. The bo
 
 <img src="https://github.com/Julia-cloudname/Project_2/blob/main/assets/images/pause-button.webp"></details> 
 
-<details><summary>The Round button and the Shift key save and display the result of the last lap. It's dysplay:</Summary>
+<details><summary>The Round button and the Shift key save and display the result of the last lap. It displays:</Summary>
 
 <img src="https://github.com/Julia-cloudname/Project_2/blob/main/assets/images/round-active-button.webp"></details> 
 
@@ -110,7 +110,6 @@ The Stopwatch include possibility to track time, to count and save round. The bo
 
 * No errors detected when run through the official [W3C HTML Validation Service](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjulia-cloudname.github.io%2FProject_2%2F)
 
-
 ##### CSS
 
 * CSS – no errors were found when passing through the official [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjulia-cloudname.github.io%2FProject_2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
@@ -126,11 +125,9 @@ Results from Lighthouse testing:
 * Desktop
 ![Responsice Mockup](assets/images/lighthouse-desktop.webp)
 
-
-No any errors on Javascript validator [jshint.com](https://jshint.com/):
+No errors on Javascript validator [jshint.com](https://jshint.com/):
 
 ![Responsice Mockup](assets/images/jshint.webp)
-
 
 *Manual testing*: 
 
@@ -143,40 +140,38 @@ Devices:
 
 Browsers:
 
-- Chrom
+- Chrome
 - Safari
 - Brave
 - Mozilla Firefox
 
-Testing functionality - during testing site on all available devices site behave was as the user expects, buttons work correctly.
+Testing functionality - during the testing site on all available devices site behaves as the user expects, buttons work correctly.
 
-☑️ I clicked on START button starts timer. When timer is working the user see yellow button "Pause" instead "Start". 
+☑️ When I click on the START, button starts the timer. When the timer is working the user sees the yellow button "Pause" instead of "Start". 
 
-☑️ Button "PAUSE" pauses the timer, user see "Start" button instead "Pause".
+☑️ When I click the button "PAUSE", it pauses the timer, and a user sees the "Start" button instead "Pause".
 
-☑️ Button "ROUND" create element with saved results of last lap".
+☑️ When I click the button "ROUND", it creates an element with saved results of the last lap".
 
-☑️ Button "RESET" stops timer and reset all data on 0 and clear round elements. 
+☑️ When I click the button "RESET" stops the timer and resets all data to 0 and clears round elements. 
 
-☑️ Button "HOW TO USE TIMER" open area with tutorial and hide it by click.
+☑️ When I click on the button "HOW TO USE TIMER" opens the area with a tutorial and hide it by clicking.
 
-Testing responsiveness - website was checked on responsiveness on dev tools, special items and multiple devices by manual testing.
-
-Online-testing: on site [bluetree.ai](https://ui.dev/amiresponsive?url=https://julia-cloudname.github.io/Project_2/)  
+Testing responsiveness - the website was checked on responsiveness on dev tools
 ​
 ## **Bugs**
 
 1
 
-* Issue - When user click on button "New round", creates new round even if the timer doesn't work and displays 0.
-* Cause -  there are no cheking is timer start or not
-* Resolution - add if-condition to New round button listenets, which return nothing if the timer doesn't work (the button New round isn't active)
+* Issue - When the user clicks on the button "New round", creates a new round even if the timer doesn't work and displays 0.
+* Cause -  there is no checking if the timer starts or not
+* Resolution - add if-condition to New round button listener, which returns nothing if the timer doesn't work (the button New round isn't active)
 
 2
 
-* Issue - When user click on button "New round", rounds start to display from buttom to top and user don't see the value of last round till scroll on the bottom
-* Cause -  rounds display in reverse order
-* Resolution - change method of adding rounds to html fron .append() to prepend(), now user can see the last round on the top of list
+* Issue - When the user clicks on the button "New round", rounds start to display from bottom to top and the user doesn't see the value of the last round till scrolls to the bottom
+* Cause -  rounds displayed in reverse order
+* Resolution - change the method of adding rounds to HTML from .append() to prepend(), now user can see the last round on the top of the list
 ​
 ***
 ## **Deployment**
@@ -186,7 +181,7 @@ The site was deployed to GitHub pages. The steps to deploy:
 * In the GitHub repository, navigate to the Settings tab
 * From the menu on the left side of the screen, click on 'Pages'
 * From the 'Source' section, click on the dropdown menu and select 'Deploy from branch'.  
-* In menu Branch below select 'main' branch and folder 'root'
+* In the menu Branch below select the 'main' branch and folder 'root'
 
 Clicking 'save' will refresh the page and publish the site.  Note, publishing will take a short amount of time.
 
